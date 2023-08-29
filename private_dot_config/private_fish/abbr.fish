@@ -27,6 +27,7 @@ abbr g git
 abbr ga 'git add'
 abbr gc 'git commit -m'
 abbr gcl 'git clone'
+abbr gco 'git checkout'
 abbr gpl 'git pull'
 abbr gp 'git push'
 abbr gst 'git status'
