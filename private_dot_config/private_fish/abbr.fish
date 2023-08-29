@@ -33,6 +33,7 @@ abbr gp 'git push'
 abbr gst 'git status'
 abbr gd 'git diff'
 abbr gl 'git log --stat'
+abbr grs 'git reset'
 
 # unix alt
 abbr bat 'bat --paging=never -f'
