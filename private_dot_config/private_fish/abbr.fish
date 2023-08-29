@@ -7,7 +7,7 @@ abbr grant 'echo $(passage show Master) | sudo -S' # if i need to do a lot of su
 abbr shmoji 'shmoji fzf | xclip -selection clipboard'
 
 # fish
-abbr gofish 'clear && source $fishconf && omf reload'
+abbr gofish 'clear && source $fishconf && exec fish'
 abbr showenv 'set --universal | head -n 20'
 
 # chez
