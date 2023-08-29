@@ -1,11 +1,16 @@
 # misc
 # source vars & reload shell
 abbr c clear
-abbr x exit
 abbr h $HOME
-abbr gofish 'clear && source $fishconf && omf reload'
+abbr x exit
 abbr grant 'echo $(passage show Master) | sudo -S' # if i need to do a lot of sudo stuff
+abbr shmoji 'shmoji fzf | xclip -selection clipboard'
+
+# fish
+abbr gofish 'clear && source $fishconf && omf reload'
 abbr showenv 'set --universal | head -n 20'
+
+# chez
 abbr chez chezmoi
 abbr chezh 'cd $chezdir'
 
@@ -29,7 +34,6 @@ abbr gd 'git diff'
 abbr gl 'git log --stat'
 
 # unix alt
-abbr shmoji 'shmoji fzf | xclip -selection clipboard'
 abbr bat 'bat --paging=never -f'
 abbr exa 'exa --icons --color=always -l'
 abbr fd fdfind
