@@ -3,6 +3,7 @@
 abbr c clear
 abbr h $HOME
 abbr x exit
+abbr chmox 'chmod +x'
 abbr grant 'echo $(passage show Master) | sudo -S' # if i need to do a lot of sudo stuff
 abbr shmoji 'shmoji fzf | xclip -selection clipboard'
 
