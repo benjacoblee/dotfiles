@@ -55,6 +55,6 @@ abbr fd fdfind
 abbr nrd 'npm run dev'
 
 # go
-abbr goru 'go run'
+abbr goru 'go run .'
 abbr gomt 'go mod tidy'
 abbr gomi 'go mod init'
