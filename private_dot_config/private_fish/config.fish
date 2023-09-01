@@ -2,8 +2,6 @@ if status is-interactive
     # Commands to run in interactive sessions can go here
 end
 
-set confdir $HOME/.config/fish
-set fishconf $confdir/config.fish
-set chezdir ~/.local/share/chezmoi/
 
+source $HOME/.config/fish/dir.fish
 source $confdir/abbr.fish

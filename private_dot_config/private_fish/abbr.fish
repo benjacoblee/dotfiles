@@ -1,6 +1,6 @@
-# misc
-# source vars & reload shell
+set fishconf $confdir/config.fish
 
+# misc
 abbr c clear
 abbr h $HOME
 abbr x exit
@@ -54,7 +54,14 @@ abbr fd fdfind
 # dev
 abbr nrd 'npm run dev'
 
-# go
-abbr goru 'go run .'
-abbr gomt 'go mod tidy'
-abbr gomi 'go mod init'
+# na fk this
+# abbr goru 'go run .'
+# abbr gomt 'go mod tidy'
+# abbr gomi 'go mod init'
+
+# rust, rustlings, cargo
+abbr rsc rustc
+abbr rslh 'cd $rsldir && rustlings watch'
+abbr cgb 'cargo build'
+abbr cgr 'cargo run'
+abbr cgc 'cargo check'
