@@ -62,7 +62,8 @@ abbr nrd 'npm run dev'
 
 # rust, rustlings, cargo
 abbr rsc rustc
-abbr rslh 'cd $rsldir && rustlings watch'
+abbr rslh 'cd $rsldir'
+abbr rslhw 'cd $rsldir && rustlings watch'
 abbr cg 'cargo'
 abbr cgb 'cargo build'
 abbr cgr 'cargo run'
