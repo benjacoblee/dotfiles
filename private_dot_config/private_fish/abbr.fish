@@ -8,6 +8,7 @@ abbr chmox 'chmod +x'
 abbr grant 'echo $(passage show Master) | sudo -S' # if i need to do a lot of sudo stuff
 abbr shmoji 'shmoji fzf | xclip -selection clipboard'
 abbr rm '# Don\'t use this! Use `trash-cli` instead' # https://github.com/andreafrancia/trash-cli
+abbr cdcd 'cd $codedir'
 
 # trash
 abbr t trash
@@ -65,3 +66,4 @@ abbr rslh 'cd $rsldir && rustlings watch'
 abbr cgb 'cargo build'
 abbr cgr 'cargo run'
 abbr cgc 'cargo check'
+abbr cgn 'cargo new'
