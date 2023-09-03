@@ -55,11 +55,6 @@ abbr fd fdfind
 # dev
 abbr nrd 'npm run dev'
 
-# na fk this
-# abbr goru 'go run .'
-# abbr gomt 'go mod tidy'
-# abbr gomi 'go mod init'
-
 # rust, rustlings, cargo
 abbr rsc rustc
 abbr rslh 'cd $rsldir'
