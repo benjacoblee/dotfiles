@@ -9,6 +9,7 @@ abbr grant 'echo $(passage show Master) | sudo -S' # if i need to do a lot of su
 abbr shmoji 'shmoji fzf | xclip -selection clipboard'
 abbr rm '# Don\'t use this! Use `trash-cli` instead' # https://github.com/andreafrancia/trash-cli
 abbr cdcd 'cd $codedir'
+abbr upx 'upx --best --lzma' # https://github.com/johnthagen/min-sized-rust
 
 # trash
 abbr t trash
