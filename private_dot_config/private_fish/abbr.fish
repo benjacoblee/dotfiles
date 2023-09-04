@@ -8,7 +8,7 @@ abbr chmox 'chmod +x'
 abbr grant 'echo $(passage show Master) | sudo -S' # if i need to do a lot of sudo stuff
 abbr shmoji 'shmoji fzf | xclip -selection clipboard'
 abbr rm '# Don\'t use this! Use `trash-cli` instead' # https://github.com/andreafrancia/trash-cli
-abbr cdcd 'cd $codedir'
+abbr zcd 'z $codedir'
 abbr upx 'upx --best --lzma' # https://github.com/johnthagen/min-sized-rust
 
 # trash
@@ -24,7 +24,7 @@ abbr showenv 'set --universal | head -n 20'
 
 # chez
 abbr chez chezmoi
-abbr chezh 'cd $chezdir'
+abbr chezh 'z $chezdir'
 
 # docker
 abbr dcud 'docker compose up -d'
@@ -59,11 +59,12 @@ abbr nrd 'npm run dev'
 
 # rust, rustlings, cargo
 abbr rsc rustc
-abbr rslh 'cd $rsldir'
-abbr rslhw 'cd $rsldir && rustlings watch'
+abbr rslh 'z $rsldir'
+abbr rslhw 'z $rsldir && rustlings watch'
 abbr cg 'cargo'
 abbr cgb 'cargo build'
 abbr cgr 'cargo run && cargo clean'
 abbr cgc 'cargo check'
 abbr cgcl 'cargo clean --verbose'
 abbr cgn 'cargo new'
+

@@ -5,3 +5,5 @@ end
 
 source $HOME/.config/fish/dir.fish
 source $confdir/abbr.fish
+
+zoxide init fish | source
