@@ -14,7 +14,7 @@ abbr upx 'upx --best --lzma' # https://github.com/johnthagen/min-sized-rust
 # trash
 abbr t trash
 abbr tp trash-put
-abbr te trash-empty
+abbr te cfm trash-empty
 abbr tl trash-list
 abbr trm trash-rm
 
