@@ -69,4 +69,4 @@ abbr cgrc 'cargo run && cargo clean'
 abbr cgc 'cargo check'
 abbr cgcl 'cargo clean --verbose'
 abbr cgn 'cargo new'
-
+abbr bc 'bacon'
