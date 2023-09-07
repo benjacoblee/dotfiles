@@ -15,7 +15,7 @@ abbr obsh 'z /mnt/d/data/obsidian'
 # trash
 abbr t trash
 abbr tp trash-put
-abbr te cfm trash-empty
+abbr te 'trash-list && cfm trash-empty'
 abbr tl trash-list
 abbr trm trash-rm
 
@@ -64,7 +64,8 @@ abbr rslh 'z $rsldir'
 abbr rslhw 'z $rsldir && rustlings watch'
 abbr cg 'cargo'
 abbr cgb 'cargo build'
-abbr cgr 'cargo run && cargo clean'
+abbr cgr 'cargo run'
+abbr cgrc 'cargo run && cargo clean'
 abbr cgc 'cargo check'
 abbr cgcl 'cargo clean --verbose'
 abbr cgn 'cargo new'
