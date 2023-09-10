@@ -48,6 +48,7 @@ abbr gsh 'git stash'
 abbr gd 'git diff'
 abbr gl 'git log --stat'
 abbr grs 'git reset'
+abbr grv 'git remote -v'
 abbr gitm 'gitmoji -c'
 
 # unix alt
