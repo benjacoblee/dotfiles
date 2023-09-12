@@ -23,6 +23,7 @@ abbr trm trash-rm
 # fish
 abbr gofish 'clear && source $fishconf && exec fish'
 abbr showenv 'set --universal | head -n 20'
+abbr showabbr 'bat --paging=never -f $confdir/abbr.fish --style plain'
 
 # chez
 abbr chez chezmoi
@@ -67,6 +68,7 @@ abbr gomi 'go mod init'
 abbr gomt 'go mod tidy'
 abbr gobu 'go build .'
 abbr gofmt 'go fmt'
+abbr got 'go test -v'
 
 # rust, rustlings, cargo
 abbr rsc rustc
