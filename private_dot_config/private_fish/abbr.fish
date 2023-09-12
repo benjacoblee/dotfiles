@@ -11,6 +11,7 @@ abbr rm '# Don\'t use this! Use `trash-cli` instead' # https://github.com/andrea
 abbr zcd 'z $codedir'
 abbr upx 'upx --best --lzma' # https://github.com/johnthagen/min-sized-rust
 abbr obsh 'z /mnt/d/data/obsidian'
+abbr c. 'code .'
 
 # trash
 abbr t trash
