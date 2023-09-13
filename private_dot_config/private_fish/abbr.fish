@@ -34,6 +34,7 @@ abbr dcud 'docker compose up -d'
 abbr dcd 'docker compose down'
 abbr dcs 'docker compose stop'
 abbr dcl 'docker compose logs'
+abbr dclf 'docker compose logs -f'
 abbr dcp 'docker compose pull'
 abbr dclean 'docker system prune -af && docker volume prune -f'
 
