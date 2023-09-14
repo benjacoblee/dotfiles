@@ -2,16 +2,17 @@ set fishconf $confdir/config.fish
 
 # misc
 abbr c clear
-abbr h $HOME
-abbr x exit
+abbr c. 'code .'
 abbr chmox 'chmod +x'
 abbr grant 'echo $(passage show Master) | sudo -S' # if i need to do a lot of sudo stuff
-abbr shmoji 'shmoji fzf | xclip -selection clipboard'
-abbr rm '# Don\'t use this! Use `trash-cli` instead' # https://github.com/andreafrancia/trash-cli
-abbr zcd 'z $codedir'
-abbr upx 'upx --best --lzma' # https://github.com/johnthagen/min-sized-rust
+abbr h $HOME
 abbr obsh 'z /mnt/d/data/obsidian'
-abbr c. 'code .'
+abbr rm '# Don\'t use this! Use `trash-cli` instead' # https://github.com/andreafrancia/trash-cli
+abbr sctl 'sudo systemctl'
+abbr shmoji 'shmoji fzf | xclip -selection clipboard'
+abbr upx 'upx --best --lzma' # https://github.com/johnthagen/min-sized-rust
+abbr x exit
+abbr zcd 'z $codedir'
 
 # trash
 abbr t trash
@@ -78,7 +79,7 @@ abbr got 'go test -v'
 abbr rsc rustc
 abbr rslh 'z $rsldir'
 abbr rslhw 'z $rsldir && rustlings watch'
-abbr cg 'cargo'
+abbr cg cargo
 abbr cgb 'cargo build'
 abbr cgr 'cargo run'
 abbr cgrc 'cargo run && cargo clean'
@@ -87,4 +88,4 @@ abbr cgcl 'cargo clean --verbose'
 abbr cgn 'cargo new'
 abbr cgt 'cargo test'
 abbr cgtt 'cargo test -- --test-threads=1'
-abbr bc 'bacon'
+abbr bc bacon
