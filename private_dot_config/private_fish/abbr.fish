@@ -58,6 +58,7 @@ abbr gl 'git log --stat'
 abbr grs 'git reset'
 abbr grv 'git remote -v'
 abbr gitm 'gitmoji -c'
+abbr ginit 'git init'
 
 # unix alt
 abbr bat 'bat --paging=never -f'
@@ -73,7 +74,8 @@ abbr gomi 'go mod init'
 abbr gomt 'go mod tidy'
 abbr gobu 'go build .'
 abbr gofmt 'go fmt'
-abbr got 'go test -v'
+abbr got 'go test'
+abbr gotv 'go test -v'
 
 # rust, rustlings, cargo
 abbr rsc rustc
