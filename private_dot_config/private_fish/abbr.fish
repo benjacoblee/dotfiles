@@ -23,7 +23,7 @@ abbr trm trash-rm
 
 # fish
 abbr gofish 'clear && source $fishconf && exec fish'
-abbr showenv 'set --universal | head -n 20'
+abbr showenv "set --universal | rg -e 'fish|tide' -v -p"
 abbr showabbr 'bat --paging=never -f $confdir/abbr.fish --style plain'
 
 # chez
