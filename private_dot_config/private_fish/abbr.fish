@@ -78,6 +78,7 @@ abbr gobu 'go build .'
 abbr gofmt 'go fmt'
 abbr got 'go test'
 abbr gotv 'go test -v'
+abbr golv 'golint ./... && go vet ./...'
 
 # rust, rustlings, cargo
 abbr rsc rustc
