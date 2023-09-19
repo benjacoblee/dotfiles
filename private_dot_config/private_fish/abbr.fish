@@ -28,7 +28,7 @@ abbr trm trash-rm
 
 # fish
 abbr gfsh 'clear && source $fishconf && exec fish'
-abbr senv "set --universal | rg -e 'fish|tide' -v -p | rg """
+abbr senv 'set --universal | rg -e \'fish|tide\' -v -p | rg ""'
 abbr sabbr 'bat --paging=never -f $confdir/abbr.fish --style plain | rg ""'
 
 # chez
