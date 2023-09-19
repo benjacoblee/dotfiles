@@ -14,6 +14,11 @@ abbr upx 'upx --best --lzma' # https://github.com/johnthagen/min-sized-rust
 abbr x exit
 abbr zcd 'z $codedir'
 
+abbr asdfc 'asdf current' # show currently installed plugins
+abbr asdfg 'asdf global' # usage: asdf global golang latest
+abbr asdfl 'asdf local'
+abbr asdfr 'asdf reshim' # usage: asdf reshim golang
+
 # trash
 abbr t trash
 abbr tp trash-put
@@ -22,13 +27,14 @@ abbr tl trash-list
 abbr trm trash-rm
 
 # fish
-abbr gofish 'clear && source $fishconf && exec fish'
-abbr showenv "set --universal | rg -e 'fish|tide' -v -p"
-abbr showabbr 'bat --paging=never -f $confdir/abbr.fish --style plain'
+abbr gfsh 'clear && source $fishconf && exec fish'
+abbr senv "set --universal | rg -e 'fish|tide' -v -p | rg """
+abbr sabbr 'bat --paging=never -f $confdir/abbr.fish --style plain | rg ""'
 
 # chez
 abbr chez chezmoi
 abbr chezh 'z $chezdir'
+abbr chezr 'chezmoi re-add'
 
 # docker
 abbr dcud 'docker compose up -d'
