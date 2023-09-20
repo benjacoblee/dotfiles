@@ -14,6 +14,7 @@ abbr upx 'upx --best --lzma' # https://github.com/johnthagen/min-sized-rust
 abbr x exit
 abbr zcd 'z $codedir'
 
+# asdf
 abbr asdfc 'asdf current' # show currently installed plugins
 abbr asdfg 'asdf global' # usage: asdf global golang latest
 abbr asdfl 'asdf local'
@@ -35,7 +36,7 @@ abbr trm trash-rm
 # fish
 abbr gfsh 'clear && source $fishconf && exec fish'
 abbr senv 'set --universal | rg -e \'fish|tide\' -v -p | rg ""'
-abbr sabbr 'bat --paging=never -f $confdir/abbr.fish --style plain | rg ""'
+abbr sabbr 'bat --paging=never $confdir/abbr.fish --style plain | rg ""'
 
 # chez
 abbr chez chezmoi
@@ -75,7 +76,7 @@ abbr gitm 'gitmoji -c'
 abbr ginit 'git init'
 
 # unix alt
-abbr bat 'bat --paging=never -f'
+abbr bat 'bat --paging=never'
 abbr exa 'exa --icons --color=always -l'
 abbr fd fdfind
 
