@@ -21,7 +21,7 @@ abbr asdfr 'asdf reshim' # usage: asdf reshim golang
 
 # passage
 abbr psg 'passage'
-abbr psgs 'passage show'
+abbr psgs 'passage show -c'
 abbr psgi 'passage insert'
 abbr psgp 'passage git push'
 
