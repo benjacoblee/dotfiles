@@ -85,6 +85,7 @@ abbr gofmt 'go fmt'
 abbr got 'go test'
 abbr gotv 'go test -v'
 abbr golv 'golint ./... && go vet ./...'
+abbr shdw 'shadow'
 
 # rust, rustlings, cargo
 abbr rsc rustc
