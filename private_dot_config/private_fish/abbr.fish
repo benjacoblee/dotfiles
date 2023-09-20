@@ -19,6 +19,12 @@ abbr asdfg 'asdf global' # usage: asdf global golang latest
 abbr asdfl 'asdf local'
 abbr asdfr 'asdf reshim' # usage: asdf reshim golang
 
+# passage
+abbr psg 'passage'
+abbr psgs 'passage show'
+abbr psgi 'passage insert'
+abbr psgp 'passage git push'
+
 # trash
 abbr t trash
 abbr tp trash-put
