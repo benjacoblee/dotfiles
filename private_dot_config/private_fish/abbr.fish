@@ -13,6 +13,7 @@ abbr shmoji 'shmoji fzf | xclip -selection clipboard'
 abbr upx 'upx --best --lzma' # https://github.com/johnthagen/min-sized-rust
 abbr x exit
 abbr zcd 'z $codedir'
+abbr rp 'realpath'
 
 # asdf
 abbr asdfc 'asdf current' # show currently installed plugins
@@ -34,7 +35,7 @@ abbr tl trash-list
 abbr trm trash-rm
 
 # fish
-abbr gfsh 'clear && source $fishconf && exec fish'
+abbr gfsh 'clear && source $fishconf'
 abbr senv 'set --universal | rg -e \'fish|tide\' -v -p | rg ""'
 abbr sabbr 'bat --paging=never $confdir/abbr.fish --style plain | rg ""'
 
@@ -88,9 +89,10 @@ abbr goru 'go run .'
 abbr gomi 'go mod init'
 abbr gomt 'go mod tidy'
 abbr gobu 'go build .'
-abbr gofmt 'go fmt'
 abbr got 'go test'
 abbr gotv 'go test -v'
+abbr gotvc 'go test -v -cover'
+abbr godx 'gotestdox'
 abbr golv 'golint ./... && go vet ./...'
 abbr shdw 'shadow'
 
