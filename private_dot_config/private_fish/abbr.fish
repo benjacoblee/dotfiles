@@ -13,7 +13,7 @@ abbr shmoji 'shmoji fzf | xclip -selection clipboard'
 abbr upx 'upx --best --lzma' # https://github.com/johnthagen/min-sized-rust
 abbr x exit
 abbr zcd 'z $codedir'
-abbr rp 'realpath'
+abbr rp realpath
 
 # asdf
 abbr asdfc 'asdf current' # show currently installed plugins
@@ -22,7 +22,7 @@ abbr asdfl 'asdf local'
 abbr asdfr 'asdf reshim' # usage: asdf reshim golang
 
 # passage
-abbr psg 'passage'
+abbr psg passage
 abbr psgs 'passage show -c'
 abbr psgi 'passage insert'
 abbr psgp 'passage git push'
@@ -92,9 +92,9 @@ abbr gobu 'go build .'
 abbr got 'go test'
 abbr gotv 'go test -v'
 abbr gotvc 'go test -v -cover'
-abbr godx 'gotestdox'
+abbr godx gotestdox
 abbr golv 'golint ./... && go vet ./...'
-abbr shdw 'shadow'
+abbr shdw shadow
 
 # rust, rustlings, cargo
 abbr rsc rustc
