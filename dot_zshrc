@@ -1,0 +1,64 @@
+# permission denied error for /home/user
+# https://stackoverflow.com/questions/61408193/zsh-permission-denied-when-accessing-my-home-directory#62668952
+setopt auto_cd
+
+# Enable Ctrl+arrow key bindings for word jumping
+# https://unix.stackexchange.com/questions/5293/how-do-i-jump-to-the-next-or-previous-word-with-ctrl-arrow-keys-in-a-console
+bindkey '^[[1;5C' forward-word     # Ctrl+right arrow
+bindkey '^[[1;5D' backward-word    # Ctrl+left arrow
+
+# variables
+ZSH_DIR="/home/benn/.zsh"
+CHEZ_DIR="/home/benn/.local/share/chezmoi"
+ABBR_DIR="/home/benn/.config/zsh-abbr/user-abbreviations"
+WORDCHARS="*?[]~=&;!#$%^(){}<>" # https://lgug2z.com/articles/sensible-wordchars-for-most-developers/
+
+# oh my posh
+eval "$(oh-my-posh init zsh --config $ZSH_DIR/omp/unicorn.omp.json)"
+HISTFILE=~/.zsh_history # other omp stuff that is supposedly required, see: Zsh: No command history
+HISTSIZE=10000
+SAVEHIST=10000
+setopt appendhistory
+
+# aliases
+# WIP
+
+# zsh-autosuggestions
+# https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#manual-git-clone
+source $ZSH_DIR/zsh-autosuggestions/zsh-autosuggestions.zsh # load fish-like autosuggestions
+
+# syntax highlighting
+source $ZSH_DIR/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# zsh-zbbr
+source $ZSH_DIR/zsh-abbr/zsh-abbr.zsh
+
+# enable z
+eval "$(zoxide init zsh)"
+
+# functions
+cfm() {
+  if read -q "choice?Do you want to run $argv[1] [N/y]?"; then
+    $argv[1]
+  else
+    echo "Cancelled by user"
+  fi
+}
+
+mkch() {
+  dir_name=$argv[1]
+  dir_to_mk="$PWD/$dir_name"
+
+  if [ ! -d "$dir_to_mk" ]; then
+    mkdir -p $dir_to_mk
+    if [ $? -eq 0 ]; then
+      cd $dir_to_mk && pwd
+    fi
+  else
+    echo "ERROR: directory $dir_to_mk exists."
+  fi
+}
+
+goin() {
+  mkch $argv[1] && echo "tmp" >>.gitignore && touch main.go && go mod init $argv[1] && air init
+}
