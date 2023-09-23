@@ -4,8 +4,8 @@ setopt auto_cd
 
 # Enable Ctrl+arrow key bindings for word jumping
 # https://unix.stackexchange.com/questions/5293/how-do-i-jump-to-the-next-or-previous-word-with-ctrl-arrow-keys-in-a-console
-bindkey '^[[1;5C' forward-word     # Ctrl+right arrow
-bindkey '^[[1;5D' backward-word    # Ctrl+left arrow
+bindkey '^[[1;5C' forward-word  # Ctrl+right arrow
+bindkey '^[[1;5D' backward-word # Ctrl+left arrow
 
 # variables
 ZSH_DIR="/home/benn/.zsh"
@@ -26,6 +26,9 @@ setopt appendhistory
 # zsh-autosuggestions
 # https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#manual-git-clone
 source $ZSH_DIR/zsh-autosuggestions/zsh-autosuggestions.zsh # load fish-like autosuggestions
+
+# zsh-autocompletions
+fpath=($ZSH_DIR/zsh-completions/src $fpath)
 
 # syntax highlighting
 source $ZSH_DIR/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
