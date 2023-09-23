@@ -28,7 +28,8 @@ abbr trm="trash-rm"
 
 # zsh
 abbr ez="exec zsh"
-abbr shabbr="bat $ABBR_DIR | rg \"\""
+abbr shabbr="bat $ABBR_FILE | rg \"\""
+abbr shenv="env | sort | rg \"\""
 
 # chez
 abbr chez="chezmoi"

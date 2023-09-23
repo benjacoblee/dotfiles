@@ -10,7 +10,7 @@ bindkey '^[[1;5D' backward-word    # Ctrl+left arrow
 # variables
 ZSH_DIR="/home/benn/.zsh"
 CHEZ_DIR="/home/benn/.local/share/chezmoi"
-ABBR_DIR="/home/benn/.config/zsh-abbr/user-abbreviations"
+ABBR_FILE="/home/benn/.config/zsh-abbr/user-abbreviations"
 WORDCHARS="*?[]~=&;!#$%^(){}<>" # https://lgug2z.com/articles/sensible-wordchars-for-most-developers/
 
 # oh my posh
