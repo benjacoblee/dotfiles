@@ -6,7 +6,7 @@ setopt auto_cd
 # https://stackoverflow.com/questions/11530090/adding-a-new-entry-to-the-path-variable-in-zsh
 # https://til.hashrocket.com/posts/7evpdebn7g-remove-duplicates-in-zsh-path
 # export PATH=$HOME/bin:$PATH
-path+=("$HOME/bin")
+path=($HOME/bin $path)
 
 # Enable Ctrl+arrow key bindings for word jumping
 # https://unix.stackexchange.com/questions/5293/how-do-i-jump-to-the-next-or-previous-word-with-ctrl-arrow-keys-in-a-console
