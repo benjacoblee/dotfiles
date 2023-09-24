@@ -14,7 +14,6 @@ bindkey '^[[1;5C' forward-word  # Ctrl+right arrow
 bindkey '^[[1;5D' backward-word # Ctrl+left arrow
 
 # variables
-
 ZSH_DIR="$HOME/.zsh"
 CHEZ_DIR="$HOME/.local/share/chezmoi"
 ABBR_FILE="$HOME/.config/zsh-abbr/user-abbreviations"
