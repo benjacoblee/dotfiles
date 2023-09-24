@@ -1,7 +1,7 @@
 abbr c="clear"
 abbr chmox="chmod +x"
 abbr grant="echo $(passage show Master) | sudo -S"
-abbr hist="history l"
+abbr hist="history l | tac | bat --paging=auto -l log"
 abbr rm="# Don\'t use this! Use $(trash-cli) instead" # https://github.com/andreafrancia/trash-cli
 abbr sctl="sudo systemctl"
 abbr shmoji="shmoji fzf | xclip -selection clipboard"
