@@ -33,13 +33,6 @@ setopt appendhistory
 # https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#manual-git-clone
 source $ZSH_DIR/zsh-autosuggestions/zsh-autosuggestions.zsh # load fish-like autosuggestions
 
-# zsh-autocompletions
-fpath=($ZSH_DIR/zsh-completions/src $fpath)
-# append completions to fpath
-fpath=(${ASDF_DIR}/completions $fpath)
-# initialise completions with ZSH's compinit
-autoload -Uz compinit && compinit
-
 # syntax highlighting
 source $ZSH_DIR/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
@@ -49,6 +42,13 @@ source $ZSH_DIR/zsh-abbr/zsh-abbr.zsh
 # enable executables
 eval "$(zoxide init zsh)"
 source "$HOME/.asdf/asdf.sh"
+
+# zsh-autocompletions
+fpath=($ZSH_DIR/zsh-completions/src $fpath)
+# append completions to fpath
+fpath=(${ASDF_DIR}/completions $fpath)
+# initialise completions with ZSH's compinit
+autoload -Uz compinit && compinit
 
 # functions
 cfm() {
