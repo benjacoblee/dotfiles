@@ -2,7 +2,7 @@
 
 From `man` page:
 
-> # Global Order: zshenv, zprofile, zshrc, zlogin
+> Global Order: zshenv, zprofile, zshrc, zlogin
 
 ## `fish`
 
