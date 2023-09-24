@@ -2,17 +2,17 @@ abbr c="clear"
 abbr chmox="chmod +x"
 abbr grant="echo $(passage show Master) | sudo -S"
 abbr hist="history l | tac | bat --paging=auto -l log"
-abbr rm="# Don\'t use this! Use $(trash-cli) instead" # https://github.com/andreafrancia/trash-cli
+abbr rm="# Don\'t use this! Use $(trash-cli) instead" 
 abbr sctl="sudo systemctl"
 abbr shmoji="shmoji fzf | xclip -selection clipboard"
 abbr x="exit"
 abbr rp="realpath"
 
 # asdf
-abbr asdfc="asdf current" # show currently installed plugins
-abbr asdfg="asdf global"  # usage: asdf global golang latest
+abbr asdfc="asdf current" 
+abbr asdfg="asdf global"  
 abbr asdfl="asdf local"
-abbr asdfr="asdf reshim" # usage: asdf reshim golang
+abbr asdfr="asdf reshim" 
 
 # passage
 abbr psg="passage"
@@ -28,7 +28,7 @@ abbr tl="trash-list"
 abbr trm="trash-rm"
 
 # zsh
-abbr ez="exec zsh"
+abbr ez="clear && exec zsh"
 abbr shabbr="bat $ABBR_FILE | rg \"\""
 abbr shenv="env | sort | rg \"\""
 
