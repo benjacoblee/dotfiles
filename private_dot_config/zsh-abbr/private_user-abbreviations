@@ -88,3 +88,7 @@ abbr gotvc="go test -v -cover"
 abbr godx="gotestdox"
 abbr golv="golint ./... && go vet ./..."
 abbr shdw="shadow"
+
+# crystal
+abbr crun="crystal run"
+abbr crbu="crystal build -s --no-debug -p"
