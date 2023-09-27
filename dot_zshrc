@@ -47,6 +47,8 @@ source "$HOME/.asdf/asdf.sh"
 fpath=($ZSH_DIR/zsh-completions/src $fpath)
 # append completions to fpath
 fpath=(${ASDF_DIR}/completions $fpath)
+# case insensitive completions: https://stackoverflow.com/questions/24226685/have-zsh-return-case-insensitive-auto-complete-matches-but-prefer-exact-matches
+zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|=*' 'l:|=* r:|=*'
 # initialise completions with ZSH's compinit
 autoload -Uz compinit && compinit
 
@@ -62,6 +64,11 @@ cfm() {
 mkch() {
   dir_name=$argv[1]
   dir_to_mk="$PWD/$dir_name"
+
+  if [ -z $dir_name ]; then
+    echo "Error: no arguments supplied."
+    return
+  fi
 
   if [ ! -d "$dir_to_mk" ]; then
     mkdir -p $dir_to_mk && cd $dir_to_mk
