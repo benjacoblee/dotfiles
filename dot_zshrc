@@ -28,7 +28,6 @@ setopt appendhistory
 
 # aliases
 # WIP
-alias fd="fdfind"
 
 # zsh-autosuggestions
 # https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#manual-git-clone
