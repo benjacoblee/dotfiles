@@ -72,7 +72,7 @@ abbr ginit="git init"
 # unix alt
 abbr bat="bat --paging=never"
 abbr exa="exa --icons --color=always -l"
-abbr fd="fdfind"
+# abbr fd="fdfind"
 
 # dev
 abbr nrd="npm run dev"

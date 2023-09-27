@@ -28,6 +28,7 @@ setopt appendhistory
 
 # aliases
 # WIP
+alias fd="fdfind"
 
 # zsh-autosuggestions
 # https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#manual-git-clone
@@ -64,12 +65,11 @@ mkch() {
   dir_to_mk="$PWD/$dir_name"
 
   if [ ! -d "$dir_to_mk" ]; then
-    mkdir -p $dir_to_mk
-    if [ $? -eq 0 ]; then
-      cd $dir_to_mk && pwd
-    fi
+    mkdir -p $dir_to_mk && cd $dir_to_mk
+  elif [ -d "$dir_to_mk" ]; then
+    cd $dir_to_mk && pwd
   else
-    echo "ERROR: directory $dir_to_mk exists."
+    echo "ERROR: something went wrong."
   fi
 }
 
