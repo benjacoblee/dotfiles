@@ -83,4 +83,4 @@ goin() {
   mkch $argv[1] && echo "tmp" >>.gitignore && touch main.go && go mod init $argv[1] && air init
 }
 
-source /home/benn/.bitwarden.zsh
+source $HOME/.bitwarden.zsh
