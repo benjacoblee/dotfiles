@@ -1,0 +1,9 @@
+theme = "monokai_pro_octagon"
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor]
+true-color = true
