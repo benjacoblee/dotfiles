@@ -16,6 +16,7 @@ bindkey '^[[1;5D' backward-word # Ctrl+left arrow
 # variables
 ZSH_DIR="$HOME/.zsh"
 CHEZ_DIR="$HOME/.local/share/chezmoi"
+BREW_DIR="/opt/homebrew" # MacOS-specific
 ABBR_FILE="$HOME/.config/zsh-abbr/user-abbreviations"
 WORDCHARS="*?[]~=&;!#$%^(){}<>" # https://lgug2z.com/articles/sensible-wordchars-for-most-developers/
 
@@ -31,16 +32,17 @@ setopt appendhistory
 
 # zsh-autosuggestions
 # https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#manual-git-clone
-source $ZSH_DIR/zsh-autosuggestions/zsh-autosuggestions.zsh # load fish-like autosuggestions
+source $BREW_DIR/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # syntax highlighting
-source $ZSH_DIR/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source $BREW_DIR/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # zsh-zbbr
-source $ZSH_DIR/zsh-abbr/zsh-abbr.zsh
+source $BREW_DIR/share/zsh-abbr/zsh-abbr.zsh
 
 # enable executables
 eval "$(zoxide init zsh)"
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 source "$HOME/.asdf/asdf.sh"
 
 # zsh-autocompletions
@@ -83,8 +85,12 @@ goin() {
   mkch $argv[1] && echo "tmp" >>.gitignore && touch main.go && go mod init $argv[1] && air init
 }
 
-chkwd() {
-  echo $argv[1] | aspell -a
-}
-
 source $HOME/.bitwarden.zsh
+
+# MacOS-specfic config for crystal build
+export LDFLAGS="-L$BREW_DIR/opt/libffi/lib"
+export CPPFLAGS="-I$BREW_DIR/opt/libffi/include"
+export LIBRARY_PATH=$LIBRARY_PATH:/usr/local/opt/openssl/lib/
+
+
+
