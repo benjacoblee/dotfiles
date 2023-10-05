@@ -87,4 +87,8 @@ chkwd() {
   echo $argv[1] | aspell -a
 }
 
+vscn() {
+  code $argv[1] &
+}
+
 source $HOME/.bitwarden.zsh
