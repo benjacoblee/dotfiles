@@ -1,19 +1,20 @@
+abbr bws="export BW_SESSION=$(bw unlock --raw)"
 abbr c="clear"
 abbr chmox="chmod +x"
+abbr excsms="exercism submit"
 abbr grant="echo $(passage show Master) | sudo -S"
 abbr hist="history l | tac | bat --paging=auto -l log"
-abbr rm="# Don\'t use this! Use $(trash-cli) instead" 
+abbr rm="# Don\'t use this! Use $(trash-cli) instead"
+abbr rp="realpath"
 abbr sctl="sudo systemctl"
 abbr shmoji="shmoji fzf | xclip -selection clipboard"
 abbr x="exit"
-abbr rp="realpath"
-abbr bws="export BW_SESSION=$(bw unlock --raw)"
 
 # asdf
-abbr asdfc="asdf current" 
-abbr asdfg="asdf global"  
-abbr asdfl="asdf local"
-abbr asdfr="asdf reshim" 
+abbr asdfc="asdf current"
+abbr asdfg="asdf global"
+abbr asdfl="asdf list"
+abbr asdfr="asdf reshim"
 
 # passage
 abbr psg="passage"
@@ -94,3 +95,12 @@ abbr shdw="shadow"
 # crystal
 abbr crun="crystal run"
 abbr crbu="crystal build -s --no-debug -p"
+
+# python
+abbr py="python"
+abbr pyt="python -m pytest -o markers=task"
+
+# elixir
+abbr elxr="elixir"
+abbr mxt="mix test"
+abbr ism="iex -S mix"
