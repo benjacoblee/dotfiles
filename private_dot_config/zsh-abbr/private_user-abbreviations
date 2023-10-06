@@ -66,6 +66,7 @@ abbr gdh="git diff HEAD"
 abbr gds="git diff --staged"
 abbr gl="git log --stat"
 abbr grs="git reset"
+abbr grm="git rm"
 abbr grv="git remote -v"
 abbr gitm="gitmoji -c"
 abbr ginit="git init"
@@ -99,7 +100,6 @@ abbr crbu="crystal build -s --no-debug -p"
 abbr py="python"
 abbr pyt="python -m pytest -o markers=task"
 
-# elixir
-abbr elxr="elixir"
-abbr mxt="mix test"
-abbr ism="iex -S mix"
+# raku
+abbr rk="raku"
+
