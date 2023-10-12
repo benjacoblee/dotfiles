@@ -103,3 +103,6 @@ abbr pyt="python -m pytest -o markers=task"
 # raku
 abbr rk="raku"
 
+# nim
+abbr ncr="nim c -r"
+abbr nc="nim c"
