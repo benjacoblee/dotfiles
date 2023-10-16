@@ -87,4 +87,8 @@ chkwd() {
   echo $argv[1] | aspell -a
 }
 
+tsr() {
+  tsc $argv[1].ts && node $argv[1].js
+}
+
 source $HOME/.bitwarden.zsh

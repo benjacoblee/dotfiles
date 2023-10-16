@@ -106,3 +106,4 @@ abbr rk="raku"
 # nim
 abbr ncr="nim c -r"
 abbr nc="nim c"
+abbr npt="nimpretty"
