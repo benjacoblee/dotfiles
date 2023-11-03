@@ -88,7 +88,11 @@ chkwd() {
 }
 
 tsr() {
-  tsc --target ES2016 $argv[1].ts && node $argv[1].js
+  tsc $argv[1].ts && node $argv[1].js
 }
 
 source $HOME/.bitwarden.zsh
+
+# exports
+export FLYCTL_INSTALL="/home/benn/.fly"
+export PATH="$FLYCTL_INSTALL/bin:$PATH"

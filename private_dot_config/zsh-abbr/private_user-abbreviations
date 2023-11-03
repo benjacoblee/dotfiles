@@ -78,6 +78,8 @@ abbr fd="fdfind"
 
 # dev
 abbr nrd="npm run dev"
+abbr nrb="npm run build"
+abbr nrs="npm run start"
 
 # go
 abbr goru="go run"
@@ -107,3 +109,4 @@ abbr rk="raku"
 abbr ncr="nim c -r"
 abbr nc="nim c"
 abbr npt="nimpretty"
+abbr nbt="nimble test"
