@@ -80,6 +80,7 @@ abbr fd="fdfind"
 abbr nrd="npm run dev"
 abbr nrb="npm run build"
 abbr nrs="npm run start"
+abbr tsn="ts-node"
 
 # go
 abbr goru="go run"
