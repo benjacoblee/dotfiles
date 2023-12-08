@@ -1,6 +1,7 @@
 abbr bws="export BW_SESSION=$(bw unlock --raw)"
 abbr c="clear"
 abbr chmox="chmod +x"
+abbr code="code --profile def"
 abbr grant="echo $(passage show Master) | sudo -S"
 abbr hist="history l | tac | bat --paging=auto -l log"
 abbr rm="# Don\'t use this! Use $(trash-cli) instead"
@@ -8,6 +9,7 @@ abbr rp="realpath"
 abbr sctl="sudo systemctl"
 abbr shmoji="shmoji fzf | xclip -selection clipboard"
 abbr x="exit"
+abbr xo="xdg-open"
 
 # asdf
 abbr asdfc="asdf current"
@@ -72,8 +74,8 @@ abbr gitm="gitmoji -c"
 abbr ginit="git init"
 
 # unix alt
-abbr bat="bat --paging=never"
-abbr exa="exa --icons --color=always -l"
+abbr cat="bat --paging=never"
+abbr ls="eza --icons -l"
 abbr fd="fdfind"
 
 # dev
@@ -100,8 +102,8 @@ abbr crun="crystal run"
 abbr crbu="crystal build -s --no-debug -p"
 
 # python
-abbr py="python"
-abbr pyt="python -m pytest -o markers=task"
+abbr py="python3"
+abbr pyt="python3 -m pytest -o markers=task"
 
 # raku
 abbr rk="raku"

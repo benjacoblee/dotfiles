@@ -7,7 +7,7 @@ setopt auto_cd
 # https://til.hashrocket.com/posts/7evpdebn7g-remove-duplicates-in-zsh-path
 # export PATH=$HOME/bin:$PATH
 path=($HOME/bin $path)
-
+path=($HOME/.local/bin $path)
 # Enable Ctrl+arrow key bindings for word jumping
 # https://unix.stackexchange.com/questions/5293/how-do-i-jump-to-the-next-or-previous-word-with-ctrl-arrow-keys-in-a-console
 bindkey '^[[1;5C' forward-word  # Ctrl+right arrow
@@ -17,32 +17,19 @@ bindkey '^[[1;5D' backward-word # Ctrl+left arrow
 ZSH_DIR="$HOME/.zsh"
 CHEZ_DIR="$HOME/.local/share/chezmoi"
 ABBR_FILE="$HOME/.config/zsh-abbr/user-abbreviations"
+LINUX_BREW_DIR="/home/linuxbrew/.linuxbrew"
 WORDCHARS="*?[]~=&;!#$%^(){}<>" # https://lgug2z.com/articles/sensible-wordchars-for-most-developers/
 
-# oh my posh
-eval "$(oh-my-posh init zsh --config $ZSH_DIR/omp/unicorn.omp.json)"
 HISTFILE=~/.zsh_history # other omp stuff that is supposedly required, see: Zsh: No command history
 HISTSIZE=10000
 SAVEHIST=10000
 setopt appendhistory
 
-# aliases
-# WIP
-
 # zsh-autosuggestions
 # https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#manual-git-clone
 source $ZSH_DIR/zsh-autosuggestions/zsh-autosuggestions.zsh # load fish-like autosuggestions
-
-# syntax highlighting
-source $ZSH_DIR/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
 # zsh-zbbr
-source $ZSH_DIR/zsh-abbr/zsh-abbr.zsh
-
-# enable executables
-eval "$(zoxide init zsh)"
-source "$HOME/.asdf/asdf.sh"
-
+source "$LINUX_BREW_DIR/share/zsh-abbr/zsh-abbr.zsh"
 # zsh-autocompletions
 fpath=($ZSH_DIR/zsh-completions/src $fpath)
 # append completions to fpath
@@ -51,6 +38,11 @@ fpath=(${ASDF_DIR}/completions $fpath)
 zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|=*' 'l:|=* r:|=*'
 # initialise completions with ZSH's compinit
 autoload -Uz compinit && compinit
+# enable executables
+eval "$(zoxide init zsh)"
+source "$HOME/.asdf/asdf.sh"
+#zsh-syntax-highlighting
+source $ZSH_DIR/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # functions
 cfm() {
@@ -96,3 +88,9 @@ source $HOME/.bitwarden.zsh
 # exports
 export FLYCTL_INSTALL="/home/benn/.fly"
 export PATH="$FLYCTL_INSTALL/bin:$PATH"
+
+eval "$($LINUX_BREW_DIR/bin/brew shellenv)"
+# oh my posh
+eval "$(oh-my-posh init zsh --config $ZSH_DIR/omp/unicorn.omp.json)"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
