@@ -88,6 +88,7 @@ source $HOME/.bitwarden.zsh
 # exports
 export FLYCTL_INSTALL="/home/benn/.fly"
 export PATH="$FLYCTL_INSTALL/bin:$PATH"
+export PATH="$PATH:/usr/bin/Postman"
 
 eval "$($LINUX_BREW_DIR/bin/brew shellenv)"
 # oh my posh
