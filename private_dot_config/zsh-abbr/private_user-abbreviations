@@ -10,6 +10,7 @@ abbr sctl="sudo systemctl"
 abbr shmoji="shmoji fzf | xclip -selection clipboard"
 abbr x="exit"
 abbr xo="xdg-open"
+abbr uidg="uuidgen"
 
 # asdf
 abbr asdfc="asdf current"

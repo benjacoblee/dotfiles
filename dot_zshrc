@@ -95,3 +95,11 @@ eval "$($LINUX_BREW_DIR/bin/brew shellenv)"
 eval "$(oh-my-posh init zsh --config $ZSH_DIR/omp/unicorn.omp.json)"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# pnpm
+export PNPM_HOME="/home/benn/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
