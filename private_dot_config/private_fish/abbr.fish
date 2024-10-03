@@ -1,5 +1,3 @@
-set fishconf $confdir/config.fish
-
 abbr c clear
 abbr chmox "chmod +x"
 abbr code "code --profile def"
@@ -36,8 +34,9 @@ abbr shabbr "bat $ABBR_FILE | rg \"\""
 abbr shenv "env | sort | rg \"\""
 
 # chez
+set -l CHEZ_DIR ~/.local/share/chezmoi/
 abbr chez chezmoi
-abbr chezh "z $chezdir"
+abbr chezh "z $CHEZ_DIR"
 abbr chezr "chezmoi re-add"
 
 # docker
@@ -54,6 +53,7 @@ abbr dcr "docker compose restart"
 abbr g git
 abbr ga "git add"
 abbr gc "git commit -m"
+abbr gcam "git commit --amend"
 abbr gcl "git clone"
 abbr gco "git checkout"
 abbr gpl "git pull"
