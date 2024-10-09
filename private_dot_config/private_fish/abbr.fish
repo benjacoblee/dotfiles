@@ -1,6 +1,6 @@
 abbr c clear
 abbr chmox "chmod +x"
-abbr code "code --profile def"
+abbr code "code --profile default-portable"
 abbr grant "echo $(passage show Master) | sudo -S"
 abbr hist "history l | tac | bat --paging=auto -l log"
 abbr rp realpath
@@ -8,6 +8,7 @@ abbr sctl "sudo systemctl"
 abbr shmoji "shmoji fzf | xclip -selection clipboard"
 abbr x exit
 abbr uidg uuidgen
+abbr clip "xclip -selection clipboard"
 
 # asdf
 abbr asdfc "asdf current"
