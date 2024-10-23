@@ -1,3 +1,4 @@
 function rrun
-    rustc -O $argv[1].rs && strip $argv[1] && ./$argv[1]
+    set arr $(string split . "$argv")
+    rustc "$argv" && ./"$arr[1]" && rm "$arr[1]"
 end
