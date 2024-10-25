@@ -125,5 +125,6 @@ abbr cg cargo
 abbr cgb cargo build
 abbr cgr cargo run
 abbr cgc cargo clean
+abbr cgrc "cargo run && cargo clean"
 abbr cgi cargo install
 abbr cgn cargo new
