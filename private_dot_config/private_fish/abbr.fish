@@ -2,7 +2,7 @@ abbr c clear
 abbr chmox "chmod +x"
 abbr code "code --profile default-portable"
 abbr grant "echo $(passage show Master) | sudo -S"
-abbr hist "history l | tac | bat --paging=auto -l log"
+abbr hist "history l | bat --paging=auto -l log"
 abbr rp realpath
 abbr sctl "sudo systemctl"
 abbr shmoji "shmoji fzf | xclip -selection clipboard"
@@ -126,3 +126,4 @@ abbr cgb cargo build
 abbr cgr cargo run
 abbr cgc cargo clean
 abbr cgi cargo install
+abbr cgn cargo new
