@@ -9,7 +9,6 @@ abbr shmoji "shmoji fzf | xclip -selection clipboard"
 abbr x exit
 abbr uidg uuidgen
 abbr clip "xclip -selection clipboard"
-abbr nvim "~/.local/bin/nvim.appimage"
 
 # asdf
 abbr asdfc "asdf current"
@@ -128,3 +127,5 @@ abbr cgc cargo clean
 abbr cgrc "cargo run && cargo clean"
 abbr cgi cargo install
 abbr cgn cargo new
+abbr cga cargo add
+abbr cgt cargo test
