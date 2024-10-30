@@ -1,13 +1,13 @@
-abbr c clear
+abbr c "clear"
 abbr chmox "chmod +x"
 abbr code "code --profile default-portable"
 abbr grant "echo $(passage show Master) | sudo -S"
 abbr hist "history l | bat --paging=auto -l log"
-abbr rp realpath
+abbr rp "realpath"
 abbr sctl "sudo systemctl"
 abbr shmoji "shmoji fzf | xclip -selection clipboard"
-abbr x exit
-abbr uidg uuidgen
+abbr x "exit"
+abbr uidg "uuidgen"
 abbr clip "xclip -selection clipboard"
 
 # asdf
@@ -17,17 +17,17 @@ abbr asdfl "asdf list"
 abbr asdfr "asdf reshim"
 
 # passage
-abbr psg passage
+abbr psg "passage"
 abbr psgs "passage show -c"
 abbr psgi "passage insert"
 abbr psgp "passage git push"
 
 # trash
-abbr t trash
-abbr tp trash-put
+abbr t "trash"
+abbr tp "trash-put"
 abbr te "trash-list && cfm trash-empty"
-abbr tl trash-list
-abbr trm trash-rm
+abbr tl "trash-list"
+abbr trm "trash-rm"
 
 # zsh
 abbr ez "clear && exec zsh"
@@ -35,8 +35,8 @@ abbr shabbr "bat $ABBR_FILE | rg \"\""
 abbr shenv "env | sort | rg \"\""
 
 # chez
-set -l CHEZ_DIR ~/.local/share/chezmoi/
-abbr chez chezmoi
+set -l CHEZ_DIR ~/.local/share/chezmoi/ # why is this here
+abbr chez "chezmoi"
 abbr chezh "z $CHEZ_DIR"
 abbr chezr "chezmoi re-add"
 
@@ -51,7 +51,7 @@ abbr dclean "docker system prune -af && docker volume prune -f"
 abbr dcr "docker compose restart"
 
 # git
-abbr g git
+abbr g "git"
 abbr ga "git add"
 abbr gc "git commit -m"
 abbr gcam "git commit --amend"
@@ -78,13 +78,13 @@ abbr ginit "git init"
 # unix alt
 abbr cat "bat --paging=never"
 abbr ls "eza --icons -l"
-abbr fd fdfind
+abbr fd "fdfind"
 
 # dev
 abbr nrd "npm run dev"
 abbr nrb "npm run build"
 abbr nrs "npm run start"
-abbr tsn ts-node
+abbr tsn "ts-node"
 
 # go
 abbr goru "go run"
@@ -95,37 +95,39 @@ abbr gobu "go build ."
 abbr got "go test"
 abbr gotv "go test -v"
 abbr gotvc "go test -v -cover"
-abbr godx gotestdox
+abbr godx "gotestdox"
 abbr golv "golint ./... && go vet ./..."
-abbr shdw shadow
+abbr shdw "shadow"
 
 # crystal
 abbr crun "crystal run"
 abbr crbu "crystal build -s --no-debug -p"
 
 # python
-abbr py python3
+abbr py "python3"
 abbr pyt "python3 -m pytest -o markers=task"
 
 # raku
-abbr rk raku
+abbr rk "raku"
 
 # nim
 abbr ncr "nim c -r"
 abbr nc "nim c"
-abbr npt nimpretty
+abbr npt "nimpretty"
 abbr nbt "nimble test"
 
 # ruby
 abbr rb ruby
 
 # rust 
-abbr cg cargo
-abbr cgb cargo build
-abbr cgr cargo run
-abbr cgc cargo clean
+abbr cg "cargo"
+abbr cgb "cargo build"
+abbr cgr "cargo run"
+abbr cgcl "cargo clean"
+abbr cgch "cargo check"
 abbr cgrc "cargo run && cargo clean"
-abbr cgi cargo install
-abbr cgn cargo new
-abbr cga cargo add
-abbr cgt cargo test
+abbr cgi "cargo install"
+abbr cgn "cargo new"
+abbr cga "cargo add"
+abbr cgt "cargo test"
+abbr rsd "rustup doc"
