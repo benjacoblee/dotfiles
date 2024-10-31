@@ -77,7 +77,7 @@ abbr ginit "git init"
 
 # unix alt
 abbr cat "bat --paging=never"
-abbr ls "eza --icons -l"
+abbr ls "eza --icons -la"
 abbr fd "fdfind"
 
 # dev
@@ -127,7 +127,7 @@ abbr cgcl "cargo clean"
 abbr cgch "cargo check"
 abbr cgrc "cargo run && cargo clean"
 abbr cgi "cargo install"
-abbr cgn "cargo new"
+abbr cgn "cargo new --vcs none"
 abbr cga "cargo add"
 abbr cgt "cargo test"
 abbr rsd "rustup doc"
