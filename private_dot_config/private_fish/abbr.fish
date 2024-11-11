@@ -111,7 +111,6 @@ abbr pyt "python3 -m pytest -o markers=task"
 abbr rk "raku"
 
 # nim
-abbr ncr "nim c -r"
 abbr nc "nim c"
 abbr npt "nimpretty"
 abbr nbt "nimble test"

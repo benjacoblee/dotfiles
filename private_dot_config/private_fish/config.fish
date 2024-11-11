@@ -7,3 +7,5 @@ source $CONF_DIR/abbr.fish
 source ~/.asdf/asdf.fish
 
 zoxide init fish | source
+
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
