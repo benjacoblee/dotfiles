@@ -114,6 +114,8 @@ abbr rk "raku"
 abbr nc "nim c"
 abbr npt "nimpretty"
 abbr nbt "nimble test"
+abbr nb "nimble"
+abbr nbi "nimble install"
 
 # ruby
 abbr rb ruby
