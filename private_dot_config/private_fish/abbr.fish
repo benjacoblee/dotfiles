@@ -25,7 +25,7 @@ abbr psgp "passage git push"
 # trash
 abbr t "trash"
 abbr tp "trash-put"
-abbr te "trash-list && cfm trash-empty"
+abbr te "trash-empty"
 abbr tl "trash-list"
 abbr trm "trash-rm"
 
