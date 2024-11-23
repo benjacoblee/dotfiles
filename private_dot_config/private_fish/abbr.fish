@@ -132,3 +132,13 @@ abbr cgn "cargo new --vcs none"
 abbr cga "cargo add"
 abbr cgt "cargo test"
 abbr rsd "rustup doc"
+
+# gleam
+abbr glr "gleam run"
+abbr glcl "gleam clean"
+abbr gln "gleam new --skip-git --skip-github"
+abbr glt "gleam test"
+
+# elixir
+abbr elx "elixir"
+abbr mxr "mix run"
