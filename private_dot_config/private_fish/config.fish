@@ -9,3 +9,7 @@ source ~/.asdf/asdf.fish
 zoxide init fish | source
 
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+
+# >>> coursier install directory >>>
+set -gx PATH "$PATH:/home/benn/.local/share/coursier/bin"
+# <<< coursier install directory <<<

@@ -140,5 +140,8 @@ abbr gln "gleam new --skip-git --skip-github"
 abbr glt "gleam test"
 
 # elixir
-abbr elx "elixir"
+abbr elxr "elixir"
 abbr mxr "mix run"
+abbr mxt "mix test"
+abbr mxcl "mix clean"
+abbr mxdcl "mix deps.clean"
